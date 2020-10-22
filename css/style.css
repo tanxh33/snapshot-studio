@@ -17,16 +17,21 @@ body {
   background-color: #ffffff;
 }
 
-.bg-light {
-  /* background-color: var(--primary-color) !important; */
-  background-color: #ffffff !important;
-}
-
 #navbar {
   color: var(--dark-color) !important;
   border-bottom: var(--primary-color) 2px solid;
 }
 
+.bg-light {
+  /* background-color: var(--primary-color) !important; */
+  background-color: #ffffff !important;
+}
+
 .navbar-brand {
   display: inline;
+}
+
+.container-fluid {
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
