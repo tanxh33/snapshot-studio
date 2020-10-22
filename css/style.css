@@ -1,0 +1,32 @@
+:root {
+  --primary-color: #FFC1AA;
+  --secondary-color: #479ec4;
+  --light-color: #f4f4f4;
+  --dark-color: #777777;
+  --max-width: 1280px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+  background-color: #ffffff;
+}
+
+.bg-light {
+  /* background-color: var(--primary-color) !important; */
+  background-color: #ffffff !important;
+}
+
+#navbar {
+  color: var(--dark-color) !important;
+  border-bottom: var(--primary-color) 2px solid;
+}
+
+.navbar-brand {
+  display: inline;
+}
