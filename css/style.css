@@ -4,7 +4,7 @@
   --secondary-color: #fdb9ba;
   --tertiary-color: #2f3b5c;
   --light-color: #f4f4f4;
-  --medium-color: #777777;
+  --medium-color: #6c6a6a;
   --dark-color: #333333;
   --max-width: 1280px;
 }
@@ -109,4 +109,57 @@ h1.custom-heading {
   opacity: 1;
   text-decoration: none;
   background-color: var(--light-color);
+}
+
+
+/* ===================== */
+/* Footer */
+/* ===================== */
+#footer {
+  background: var(--light-color);
+  font-size: 14px;
+}
+
+#footer h5 {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+
+#footer-a ul {
+  list-style-type: none;
+}
+
+#footer-a h6 {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+#footer-a a {
+  color: black;
+}
+
+#footer-a a:hover {
+  color: var(--medium-color);
+  text-decoration: none;
+  transition: color 0.15s ease-in-out;
+}
+
+#footer-a ul li:first-child a {
+  border-bottom: 2px solid var(--medium-color);
+}
+
+#footer-a .fa-instagram {
+  height: 32px;
+}
+
+
+#footer-bottom-text,
+#footer-bottom-text a {
+  font-size: 12px;
+  color: var(--medium-color);
+}
+
+#footer-bottom-text a {
+  text-decoration: underline;
 }
