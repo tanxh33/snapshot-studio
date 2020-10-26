@@ -22,6 +22,10 @@ body {
 /* ===================== */
 /* Utility classes */
 /* ===================== */
+.container-fluid {
+  max-width: var(--max-width);
+}
+
 .custom-heading {
   font-family: 'Reenie Beanie', cursive;
   /* Make text un-selectable */
@@ -76,6 +80,7 @@ h1.custom-heading {
 
 #navbar-items .nav-link:hover {
   opacity: 1;
+  transition: opacity 0.15s ease-in-out;
 }
 
 #navbar-items .active .nav-link {
