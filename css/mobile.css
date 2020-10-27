@@ -4,7 +4,7 @@
 }
 
 @media (max-width: 768px) {
-  #footer-c-grid {
+  #footer-c .grid-container {
     display: grid;
     grid-template-columns: none;
     grid-template-rows: repeat(7, 1fr);
