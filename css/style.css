@@ -307,7 +307,7 @@ h1.custom-heading {
 }
 
 #about .header, #action .header {
-  font-weight: 600px !important;
+  font-weight: 600 !important;
   font-size: calc(28px + (32 - 28) * ((100vw - 500px) / (1280 - 500)));;
 }
 
@@ -316,6 +316,18 @@ h1.custom-heading {
   font-size: calc(14px + (18 - 14) * ((100vw - 500px) / (1280 - 500)));;
 }
 
+#teamMember {
+  padding-top: 0 !important;
+}
+
+#teamMember .header {
+  width: 50%;
+  text-align: center;
+  margin-bottom: 4%;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: calc(28px + (32 - 28) * ((100vw - 500px) / (1280 - 500)));;
+}
 
 #teamMember .content {
   display: flex;
@@ -335,7 +347,7 @@ h1.custom-heading {
 
 #teamMember .memberCardText h3 {
   font-family: 'Poppins', sans-serif;
-  font-weight: bold;
+  font-weight: 600;
   font-size: 24px;
 }
 
@@ -387,6 +399,12 @@ h1.custom-heading {
 }
 
 @media screen and (max-width: 600px) {
+  #teamMember .header {
+    width: 100%;
+    text-align: start;
+    margin-bottom: 10%;
+  }
+
   #teamMember .memberCardText {
     width: 80%;
     margin:auto;
