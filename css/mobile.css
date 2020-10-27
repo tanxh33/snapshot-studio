@@ -28,6 +28,10 @@
   margin-top:2%;
 }
 
+#pdpa .TOC a {
+  padding: 0.5rem 1rem;
+}
+
 #pdpa .list {
   margin-left: 6%;
 }
@@ -118,8 +122,8 @@
   #about-team .memberCardText {
     padding: 0;
   }
-
 }
+
 
 @media screen and (max-width: 576px) {
   #home-a1 > div,
@@ -159,6 +163,6 @@
   }
 
   #privacy-toc {
-    display: none !important;
+    padding-right: 1.5rem;
   }
 }

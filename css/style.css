@@ -20,6 +20,7 @@ body {
 }
 
 html {
+  /* Jumping to different sections */
   scroll-behavior: smooth;
 }
 
@@ -69,6 +70,21 @@ h1.custom-heading {
   margin-right: 8rem;
   height: 2px;
   background: #e5e5e5;
+}
+
+#scroll-btn {
+  /* display: none; */
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  z-index: 420;
+  opacity: 0;
+  overflow: hidden;
+  transition: all 0.15s ease-out;
+}
+
+#scroll-btn:hover svg {
+  fill: white;
 }
 
 
@@ -420,57 +436,85 @@ h1.custom-heading {
   margin:auto;
 }
 
+
 /* ===================== */
 /* PDPA */
 /* ===================== */
 
-.TOC {
+#pdpa .TOC {
   position: sticky;
   top: 0;
 }
 
-.TOC a {
+#pdpa .TOC a {
+  padding: 1rem;
+  font-weight: 600;
+  font-size: calc(12px + (14 - 12) * ((100vw - 400px) / (1920 - 400)));
   text-decoration: none;
   color: black;
-  font-family: 'Poppins', sans-serif;
-  font-weight: bold;
-  font-size: calc(10px + (13 - 10) * ((100vw - 400px) / (1280 - 400)));
+  transition: color 0.15s ease-in-out;
+}
+
+#pdpa .TOC a:hover {
+  color: var(--medium-color);
+}
+
+#pdpa .toc-separator {
+  margin-left: 1rem;
+  height: 1px;
+  background: black;
+  opacity: 0.15;
 }
 
 #pdpa .content {
-  margin-left:2%;
+  margin-left: 1rem;
 }
 
 #pdpa .header {
-  font-family: 'Poppins', sans-serif;
-  font-weight: bold;
-  font-size: calc(28px + (36 - 28) * ((100vw - 500px) / (1280 - 500)));
+  font-weight: 600;
+  font-size: calc(28px + (36 - 28) * ((100vw - 500px) / (1920 - 500)));
 }
 
-#pdpa h5 {
-  font-family: 'Poppins', sans-serif;
-  font-weight: bold;
-  font-size: calc(18px + (24 - 18) * ((100vw - 500px) / (1280 - 500)));
-  text-decoration: underline;
-  text-decoration-color: lightgray;
+#pdpa .content h5 {
+  font-weight: 600;
+  font-size: calc(18px + (20 - 18) * ((100vw - 500px) / (1920 - 500)));
+  display: inline-block;
+  padding-bottom: 0.25rem;
+}
+
+#pdpa .content section h5 {
+  border-bottom: rgba(0, 0, 0, 0.4) 2px solid;
+  line-height: 1.8rem;
+  margin-bottom: 1.5rem;
+}
+
+#pdpa section {
+  padding-top: 1rem;
 }
 
 #pdpa .list {
-  margin-left: 3%;
+  margin-left: 1rem;
 }
 
-#pdpa .list p, .innerList p {
-  margin-left: 1.5%;
-  font-size: calc(14px + (18 - 14) * ((100vw - 500px) / (1280 - 500)));
+#pdpa .list > ol > li {
+  margin-bottom: 2rem;
+  font-size: calc(14px + (16 - 14) * ((100vw - 500px) / (1920 - 500)));
 }
 
-#pdpa section, #pdpa section h5 {
-  margin-bottom: 4%;
+#pdpa p {
+  font-size: calc(14px + (16 - 14) * ((100vw - 500px) / (1920 - 500)));
+  line-height: 1.8rem;
 }
 
-.innerList {
-  margin-left: 6%;
+#pdpa .list p,
+#pdpa .innerList p {
+  margin-left: 1rem;
 }
 
+#pdpa .innerList p {
+  margin-bottom: 0.75rem;
+}
 
-
+#pdpa .innerList {
+  margin-left: 2.5rem;
+}
