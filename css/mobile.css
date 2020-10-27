@@ -28,6 +28,10 @@
   margin-top:2%;
 }
 
+#pdpa .list {
+  margin-left: 6%;
+}
+
 
 @media screen and (max-width: 768px) {
   #footer-c .grid-container {
