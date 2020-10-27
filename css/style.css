@@ -47,10 +47,17 @@ h1.custom-heading {
   border-color: var(--primary-color);
 }
 
-.btn-primary:hover {
-  color: var(--tertiary-color);
-  background-color: var(--secondary-color);
-  border-color: var(--secondary-color);
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary.focus {
+  color: var(--tertiary-color) !important;
+  background-color: var(--secondary-color) !important;
+  border-color: var(--secondary-color) !important;
+}
+
+.btn-primary:focus,
+.btn-primary.focus {
+  box-shadow: 0 0 0 0.2rem rgba(190, 50, 104, 0.5) !important;
 }
 
 .section-divider {
@@ -197,6 +204,23 @@ h1.custom-heading {
   margin: auto;
 }
 
+#home-a1 > div > ul,
+#home-a2 > div > ul {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+}
+
+#home-a1 > div > ul h1,
+#home-a2 > div > ul h1 {
+  font-size: calc(30px + (40 - 30) * ((100vw - 500px) / (1920 - 500)));
+}
+
+#home-a1 > div > ul p,
+#home-a2 > div > ul p {
+  font-size: calc(14px + (16 - 14) * ((100vw - 500px) / (1920 - 500)));
+}
+
 #home-a1 {
   display: grid;
   grid-template-columns: 16px 180px 16px 120px 1fr;
@@ -231,13 +255,6 @@ h1.custom-heading {
 
 #home-a1 > div > img {
   margin: auto;
-}
-
-#home-a1 > div > ul,
-#home-a2 > div > ul {
-  display: flex;
-  flex-direction: column;
-  list-style-type: none;
 }
 
 #home-a2 {
