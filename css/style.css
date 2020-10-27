@@ -86,11 +86,11 @@ h1.custom-heading {
 #navbar-items .nav-link {
   color: var(--tertiary-color) !important;
   opacity: 0.6;
+  transition: opacity 0.15s ease-in-out;
 }
 
 #navbar-items .nav-link:hover {
   opacity: 1;
-  transition: opacity 0.15s ease-in-out;
 }
 
 #navbar-items .active .nav-link {
@@ -110,12 +110,12 @@ h1.custom-heading {
   font-weight: 600;
   color: var(--tertiary-color);
   opacity: 0.6;
+  transition: opacity 0.15s ease-in-out, background-color 0.15s ease-in-out;
 }
 
 #navbar .dropdown-item:hover, .dropdown-item:focus {
   opacity: 1;
   background-color: var(--light-color);
-  transition: opacity 0.15s ease-in-out, background-color 0.15s ease-in-out;
 }
 
 #navbar-items .dropdown-item.active, .dropdown-item:active {
@@ -150,12 +150,12 @@ h1.custom-heading {
 
 #footer-a a {
   color: black;
+  transition: color 0.15s ease-in-out;
 }
 
 #footer-a a:hover {
   color: var(--medium-color);
   text-decoration: none;
-  transition: color 0.15s ease-in-out;
 }
 
 #footer-a ul li:first-child a {
@@ -181,7 +181,15 @@ h1.custom-heading {
 
 #footer-b .grid-container a,
 #footer-c .grid-container a {
+  text-decoration: none;
   color: var(--medium-color);
+  transition: color 0.15s ease-in-out;
+}
+
+#footer-b .grid-container a:hover,
+#footer-c .grid-container a:hover {
+  color: var(--dark-color);
+  border-bottom: 2px solid var(--medium-color);
 }
 
 #footer-bottom-text,
@@ -299,6 +307,40 @@ h1.custom-heading {
   width: 100%;
 }
 
+#home-b .grid-container {
+  max-width: 1000px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+#home-b .home-b-col .photo-card {
+  padding-bottom: 2rem;
+  transition: all 0.15s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+}
+
+#home-b .home-b-col .photo-card:hover {
+  /* display: inline-block; */
+  transform: scale(1.05);
+  /* box-shadow: 0 0 0.25rem 0.5rem rgba(0, 0, 0, 0.2); */
+}
+
+#home-b .home-b-col img {
+  width: 100%;
+}
+
+#home-b .home-b-col h5 {
+  font-weight: 600;
+  font-size: 14px;
+  color: var(--tertiary-color);
+  margin: 0.5rem 0 0.25rem;
+}
+
+#home-b .home-b-col p {
+  font-size: 14px;
+  margin: 0;
+}
 
 /* ===================== */
 /* About Us Page */

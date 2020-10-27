@@ -85,6 +85,18 @@
     width: 90%;
   }
 
+  #home-b .grid-container {
+    gap: 1rem;
+  }
+  
+  #home-b .home-b-col .photo-card {
+    transition: none;
+  }
+
+  #home-b .home-b-col .photo-card:hover {
+    transform: none;
+  }
+
   #about-team .content {
     grid-template-columns: none;
     grid-template-rows: repeat(3, 1fr);
@@ -129,6 +141,9 @@
   #home-a1 > div > ul,
   #home-a2 > div > ul {
     margin: 0 1rem;
+  }
+  #home-b .home-b-col .photo-card {
+    padding-bottom: 1rem;
   }
 
   #about-team .memberCardText {
