@@ -281,3 +281,117 @@ h1.custom-heading {
   grid-row: 3 / 6;
   width: 100%;
 }
+
+
+/* ===================== */
+/* About Us Page */
+/* ===================== */
+#banner {
+  position: relative;
+  padding: 0 !important;
+}
+
+.bannerContent {
+  position: absolute;
+  font-family: 'Reenie Beanie', cursive;
+  font-size: calc(24px + (50 - 24) * ((100vw - 500px) / (1280 - 500)));;
+  top: 18%;
+  right: 4%;
+}
+
+
+#about > div:first-of-type {
+  width: 65%;
+  margin:auto;
+
+}
+
+#about .header, #action .header {
+  font-weight: 600px !important;
+  font-size: calc(28px + (32 - 28) * ((100vw - 500px) / (1280 - 500)));;
+}
+
+#about .content, #action div p {
+  font-family: 'Poppins', sans-serif;
+  font-size: calc(14px + (18 - 14) * ((100vw - 500px) / (1280 - 500)));;
+}
+
+
+#teamMember .content {
+  display: flex;
+}
+
+#teamMember .memberCard {
+  width: 25%;
+  margin: auto;
+  margin-top: 0;
+  text-align: center;
+}
+
+#teamMember .memberCardText {
+  text-align: start;
+  margin-top:2%;
+}
+
+#teamMember .memberCardText h3 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+#teamMember .memberCardText p {
+  font-family: 'Poppins', sans-serif;
+  font-size: calc(14px + (18 - 14) * ((100vw - 500px) / (1280 - 500)));;
+}
+
+.border {
+  border: 1px solid black;
+}
+
+#action {
+  margin-bottom: 5%;
+}
+
+#action > div:first-of-type {
+  width: 75%;
+  margin:auto;
+}
+
+@media screen and (max-width: 1000px) {
+  #about > div:first-of-type {
+    width: 100%;
+  }
+
+  #teamMember .content {
+    flex-direction: column !important;
+  }
+
+  #teamMember .memberCard {
+    width: 100%;
+    margin-top: 0;
+    text-align: center;
+  }
+
+  #teamMember .memberCardText {
+    width: 50%;
+    margin:auto;
+    padding-left:5%;
+    text-align: start;
+    margin-top:2%;
+  }
+
+  #action > div:first-of-type {
+    width: 100%;
+  }
+  
+}
+
+@media screen and (max-width: 600px) {
+  #teamMember .memberCardText {
+    width: 80%;
+    margin:auto;
+    padding-left:5%;
+    text-align: start;
+    margin-top:2%;
+  }
+}
