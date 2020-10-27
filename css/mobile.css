@@ -153,4 +153,8 @@
     text-align: start;
     margin-top:2%;
   }
+
+  #privacy-toc {
+    display: none !important;
+  }
 }

@@ -19,6 +19,10 @@ body {
   background-color: #ffffff;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 
 /* ===================== */
 /* Utility classes */
@@ -420,11 +424,17 @@ h1.custom-heading {
 /* PDPA */
 /* ===================== */
 
+.TOC {
+  position: sticky;
+  top: 0;
+}
+
 .TOC a {
   text-decoration: none;
   color: black;
   font-family: 'Poppins', sans-serif;
   font-weight: bold;
+  font-size: calc(10px + (13 - 10) * ((100vw - 400px) / (1280 - 400)));
 }
 
 #pdpa .content {
@@ -434,12 +444,13 @@ h1.custom-heading {
 #pdpa .header {
   font-family: 'Poppins', sans-serif;
   font-weight: bold;
-  font-size: 32px;
+  font-size: calc(28px + (32 - 28) * ((100vw - 500px) / (1280 - 500)));
 }
 
 #pdpa h5 {
   font-family: 'Poppins', sans-serif;
   font-weight: bold;
+  font-size: calc(18px + (24 - 18) * ((100vw - 500px) / (1280 - 500)));
 }
 
 #pdpa .list {
@@ -448,6 +459,7 @@ h1.custom-heading {
 
 #pdpa .list p, .innerList p {
   margin-left: 1.5%;
+  font-size: calc(14px + (18 - 14) * ((100vw - 500px) / (1280 - 500)));
 }
 
 #pdpa section, #pdpa section h5 {
