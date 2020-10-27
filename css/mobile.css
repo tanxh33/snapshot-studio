@@ -32,6 +32,14 @@
     display: none;
   }
 
+  #home-a1 > div {
+    border-radius: 1rem;
+  }
+
+  #home-a2 > div:nth-child(1) {
+    border-radius: 1rem;
+  }
+
   #home-a2 > div:nth-child(1) {
     padding: 3rem;
     display: grid;

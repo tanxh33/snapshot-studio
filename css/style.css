@@ -225,8 +225,8 @@ h1.custom-heading {
   align-items: center;
   justify-content: center;
   gap: 2rem;
-  /* border-top-right-radius: 30px;
-  border-bottom-right-radius: 30px; */
+  border-top-right-radius: 1rem;
+  border-bottom-right-radius: 1rem;
 }
 
 #home-a1 > div > img {
@@ -251,8 +251,8 @@ h1.custom-heading {
   grid-row: 2 / 5;
   padding: 5rem;
   background: var(--secondary-color);
-  /* border-top-left-radius: 30px;
-  border-bottom-left-radius: 30px; */
+  border-top-left-radius: 1rem;
+  border-bottom-left-radius: 1rem;
 }
 
 #home-a2 > div > ul {
