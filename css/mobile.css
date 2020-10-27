@@ -27,11 +27,12 @@
   }
 
   #home-a1 > img,
-  #home-a2 > img {
+  #home-a2 > img,
+  #home-a2 > div:nth-child(2) {
     display: none;
   }
 
-  #home-a2 > div {
+  #home-a2 > div:nth-child(1) {
     padding: 3rem;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -53,7 +54,7 @@
 
 @media (max-width: 576px) {
   #home-a1 > div,
-  #home-a2 > div {
+  #home-a2 > div:nth-child(1) {
     padding: 2rem 1rem;
     grid-template-columns: none;
     grid-template-rows: 0.3fr 1fr;
