@@ -413,3 +413,45 @@ h1.custom-heading {
     margin-top:2%;
   }
 }
+
+/* ===================== */
+/* PDPA */
+/* ===================== */
+
+.TOC a {
+  text-decoration: none;
+  color: black;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+}
+
+#pdpa .content {
+  margin-left:2%;
+}
+
+#pdpa .header {
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  font-size: 32px;
+}
+
+#pdpa h5 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+}
+
+#pdpa .list {
+  margin-left: 1.5%;
+}
+
+#pdpa .list p, .innerList p {
+  margin-left: 1.5%;
+}
+
+#pdpa section, #pdpa section h5 {
+  margin-bottom: 4%;
+}
+
+.innerList {
+  margin-left: 6%;
+}
