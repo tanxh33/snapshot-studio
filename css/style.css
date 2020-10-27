@@ -444,13 +444,15 @@ h1.custom-heading {
 #pdpa .header {
   font-family: 'Poppins', sans-serif;
   font-weight: bold;
-  font-size: calc(28px + (32 - 28) * ((100vw - 500px) / (1280 - 500)));
+  font-size: calc(28px + (36 - 28) * ((100vw - 500px) / (1280 - 500)));
 }
 
 #pdpa h5 {
   font-family: 'Poppins', sans-serif;
   font-weight: bold;
   font-size: calc(18px + (24 - 18) * ((100vw - 500px) / (1280 - 500)));
+  text-decoration: underline;
+  text-decoration-color: lightgray;
 }
 
 #pdpa .list {
