@@ -37,7 +37,7 @@ body {
 }
 
 h1.custom-heading {
-  font-size: 50px;
+  font-size: calc(40px + (50 - 40) * ((100vw - 500px) / (1280 - 500)));
 }
 
 .btn-primary {
@@ -47,10 +47,17 @@ h1.custom-heading {
   border-color: var(--primary-color);
 }
 
-.btn-primary:hover {
-  color: var(--tertiary-color);
-  background-color: var(--secondary-color);
-  border-color: var(--secondary-color);
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary.focus {
+  color: var(--tertiary-color) !important;
+  background-color: var(--secondary-color) !important;
+  border-color: var(--secondary-color) !important;
+}
+
+.btn-primary:focus,
+.btn-primary.focus {
+  box-shadow: 0 0 0 0.2rem rgba(190, 50, 104, 0.5) !important;
 }
 
 .section-divider {
@@ -79,11 +86,11 @@ h1.custom-heading {
 #navbar-items .nav-link {
   color: var(--tertiary-color) !important;
   opacity: 0.6;
+  transition: opacity 0.15s ease-in-out;
 }
 
 #navbar-items .nav-link:hover {
   opacity: 1;
-  transition: opacity 0.15s ease-in-out;
 }
 
 #navbar-items .active .nav-link {
@@ -103,12 +110,12 @@ h1.custom-heading {
   font-weight: 600;
   color: var(--tertiary-color);
   opacity: 0.6;
+  transition: opacity 0.15s ease-in-out, background-color 0.15s ease-in-out;
 }
 
 #navbar .dropdown-item:hover, .dropdown-item:focus {
   opacity: 1;
   background-color: var(--light-color);
-  transition: opacity 0.15s ease-in-out, background-color 0.15s ease-in-out;
 }
 
 #navbar-items .dropdown-item.active, .dropdown-item:active {
@@ -143,12 +150,12 @@ h1.custom-heading {
 
 #footer-a a {
   color: black;
+  transition: color 0.15s ease-in-out;
 }
 
 #footer-a a:hover {
   color: var(--medium-color);
   text-decoration: none;
-  transition: color 0.15s ease-in-out;
 }
 
 #footer-a ul li:first-child a {
@@ -174,7 +181,15 @@ h1.custom-heading {
 
 #footer-b .grid-container a,
 #footer-c .grid-container a {
+  text-decoration: none;
   color: var(--medium-color);
+  transition: color 0.15s ease-in-out;
+}
+
+#footer-b .grid-container a:hover,
+#footer-c .grid-container a:hover {
+  color: var(--dark-color);
+  border-bottom: 2px solid var(--medium-color);
 }
 
 #footer-bottom-text,
@@ -195,6 +210,23 @@ h1.custom-heading {
 #home-a2 {
   max-width: 1000px;
   margin: auto;
+}
+
+#home-a1 > div > ul,
+#home-a2 > div > ul {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+}
+
+#home-a1 > div > ul h1,
+#home-a2 > div > ul h1 {
+  font-size: calc(30px + (40 - 30) * ((100vw - 500px) / (1920 - 500)));
+}
+
+#home-a1 > div > ul p,
+#home-a2 > div > ul p {
+  font-size: calc(14px + (16 - 14) * ((100vw - 500px) / (1920 - 500)));
 }
 
 #home-a1 {
@@ -231,13 +263,6 @@ h1.custom-heading {
 
 #home-a1 > div > img {
   margin: auto;
-}
-
-#home-a1 > div > ul,
-#home-a2 > div > ul {
-  display: flex;
-  flex-direction: column;
-  list-style-type: none;
 }
 
 #home-a2 {
@@ -282,136 +307,113 @@ h1.custom-heading {
   width: 100%;
 }
 
+#home-b .grid-container {
+  max-width: 1000px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+#home-b .home-b-col .photo-card {
+  padding-bottom: 2rem;
+  transition: all 0.15s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+}
+
+#home-b .home-b-col .photo-card:hover {
+  /* display: inline-block; */
+  transform: scale(1.05);
+  /* box-shadow: 0 0 0.25rem 0.5rem rgba(0, 0, 0, 0.2); */
+}
+
+#home-b .home-b-col img {
+  width: 100%;
+}
+
+#home-b .home-b-col h5 {
+  font-weight: 600;
+  font-size: 14px;
+  color: var(--tertiary-color);
+  margin: 0.5rem 0 0.25rem;
+}
+
+#home-b .home-b-col p {
+  font-size: 14px;
+  margin: 0;
+}
 
 /* ===================== */
 /* About Us Page */
 /* ===================== */
-#banner {
+#about-banner {
   position: relative;
   padding: 0 !important;
 }
 
-.bannerContent {
+.banner-content {
   position: absolute;
-  font-family: 'Reenie Beanie', cursive;
-  font-size: calc(24px + (50 - 24) * ((100vw - 500px) / (1280 - 500)));;
+  font-size: calc(24px + (50 - 24) * ((100vw - 500px) / (1280 - 500)));
   top: 18%;
   right: 4%;
 }
 
-
-#about > div:first-of-type {
+#about-a > div:first-of-type,
+#about-team .header {
   width: 65%;
   margin:auto;
-
 }
 
-#about .header, #action .header {
-  font-weight: 600 !important;
-  font-size: calc(28px + (32 - 28) * ((100vw - 500px) / (1280 - 500)));;
-}
-
-#about .content, #action div p {
-  font-family: 'Poppins', sans-serif;
-  font-size: calc(14px + (18 - 14) * ((100vw - 500px) / (1280 - 500)));;
-}
-
-#teamMember {
-  padding-top: 0 !important;
-}
-
-#teamMember .header {
-  width: 50%;
-  text-align: center;
-  margin-bottom: 4%;
-  font-family: 'Poppins', sans-serif;
+#about-a .header,
+#about-team .header,
+#about-action .header {
   font-weight: 600;
-  font-size: calc(28px + (32 - 28) * ((100vw - 500px) / (1280 - 500)));;
+  font-size: calc(28px + (32 - 28) * ((100vw - 500px) / (1280 - 500)));
 }
 
-#teamMember .content {
-  display: flex;
+#about-a .content,
+#about-action div p {
+  font-family: 'Poppins', sans-serif;
+  font-size: calc(14px + (18 - 14) * ((100vw - 500px) / (1280 - 500)));
 }
 
-#teamMember .memberCard {
-  width: 25%;
-  margin: auto;
-  margin-top: 0;
+#about-team .content {
+  padding: 0 5rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem;
+}
+
+#about-team .memberCard {
+  /* width: 25%; */
+  /* margin: auto; */
+  /* margin-top: 0; */
   text-align: center;
 }
 
-#teamMember .memberCardText {
-  text-align: start;
-  margin-top:2%;
+#about-team .memberCard img {
+  margin: auto;
+  width: 80%;
 }
 
-#teamMember .memberCardText h3 {
+#about-team .memberCardText {
+  text-align: start;
+  margin-top: 0.5rem;
+}
+
+#about-team .memberCardText h3 {
   font-family: 'Poppins', sans-serif;
   font-weight: 600;
   font-size: 24px;
 }
 
-#teamMember .memberCardText p {
+#about-team .memberCardText p {
   font-family: 'Poppins', sans-serif;
-  font-size: calc(14px + (18 - 14) * ((100vw - 500px) / (1280 - 500)));;
+  font-size: calc(14px + (18 - 14) * ((100vw - 500px) / (1280 - 500)));
 }
 
-.border {
-  border: 1px solid black;
-}
-
-#action {
-  margin-bottom: 5%;
-}
-
-#action > div:first-of-type {
-  width: 75%;
+#about-action > div:first-of-type {
+  width: 65%;
   margin:auto;
-}
-
-@media screen and (max-width: 1000px) {
-  #about > div:first-of-type {
-    width: 100%;
-  }
-
-  #teamMember .content {
-    flex-direction: column !important;
-  }
-
-  #teamMember .memberCard {
-    width: 100%;
-    margin-top: 0;
-    text-align: center;
-  }
-
-  #teamMember .memberCardText {
-    width: 50%;
-    margin:auto;
-    padding-left:5%;
-    text-align: start;
-    margin-top:2%;
-  }
-
-  #action > div:first-of-type {
-    width: 100%;
-  }
-  
-}
-
-@media screen and (max-width: 600px) {
-  #teamMember .header {
-    width: 100%;
-    text-align: start;
-    margin-bottom: 10%;
-  }
-
-  #teamMember .memberCardText {
-    width: 80%;
-    margin:auto;
-    padding-left:5%;
-    text-align: start;
-    margin-top:2%;
-  }
 }
 
 /* ===================== */

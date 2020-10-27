@@ -1,9 +1,35 @@
-/* This file activates at 992px */
+/* This section activates at 992px */
 .navbar-brand img {
   width: 135px;
 }
 
-@media (max-width: 768px) {
+#about-a > div:first-of-type,
+#about-team .header,
+#about-action > div:first-of-type {
+  width: 100%;
+}
+
+#about-team .content {
+  padding: 0;
+  gap: 2rem;
+}
+
+#about-team .memberCard {
+  /* width: 100%; */
+  margin-top: 0;
+  text-align: center;
+}
+
+#about-team .memberCardText {
+  /* width: 50%; */
+  margin:auto;
+  padding-left: 5%;
+  text-align: start;
+  margin-top:2%;
+}
+
+
+@media screen and (max-width: 768px) {
   #footer-c .grid-container {
     display: grid;
     grid-template-columns: none;
@@ -58,9 +84,40 @@
     margin: auto;
     width: 90%;
   }
+
+  #home-b .grid-container {
+    gap: 1rem;
+  }
+  
+  #home-b .home-b-col .photo-card {
+    transition: none;
+  }
+
+  #home-b .home-b-col .photo-card:hover {
+    transform: none;
+  }
+
+  #about-team .content {
+    grid-template-columns: none;
+    grid-template-rows: repeat(3, 1fr);
+    gap: 0;
+  }
+
+  #about-team .memberCard {
+    text-align: start;
+  }
+
+  #about-team .memberCard img {
+    width: 150px;
+  }
+
+  #about-team .memberCardText {
+    padding: 0;
+  }
+
 }
 
-@media (max-width: 576px) {
+@media screen and (max-width: 576px) {
   #home-a1 > div,
   #home-a2 > div:nth-child(1) {
     padding: 2rem 1rem;
@@ -84,5 +141,16 @@
   #home-a1 > div > ul,
   #home-a2 > div > ul {
     margin: 0 1rem;
+  }
+  #home-b .home-b-col .photo-card {
+    padding-bottom: 1rem;
+  }
+
+  #about-team .memberCardText {
+    /* width: 80%; */
+    margin:auto;
+    /* padding-left:5%; */
+    text-align: start;
+    margin-top:2%;
   }
 }
