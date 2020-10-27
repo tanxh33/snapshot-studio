@@ -1,3 +1,14 @@
+/* This file activates at 992px */
 .navbar-brand img {
   width: 135px;
+}
+
+@media (max-width: 768px) {
+  #footer-c-grid {
+    display: grid;
+    grid-template-columns: none;
+    grid-template-rows: repeat(7, 1fr);
+    grid-auto-flow: column;
+    gap: 0px 0px;
+}
 }
