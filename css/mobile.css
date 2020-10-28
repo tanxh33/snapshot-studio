@@ -36,6 +36,22 @@
   margin-left: 6%;
 }
 
+#location {
+  display: block;
+  grid-template-columns: none;
+  grid-template-rows: none;
+  background-color:  #fcf4cd;
+  padding-bottom: 4%;
+  margin-bottom: 10%;
+}
+
+#address {
+  padding-top: 5%;
+}
+
+#address img {
+  max-width:4%;
+}
 
 @media screen and (max-width: 768px) {
   #footer-c .grid-container {
@@ -121,6 +137,20 @@
 
   #about-team .memberCardText {
     padding: 0;
+  }
+
+  #contact {
+    display: block;
+    grid-template-columns: none;
+    grid-template-rows: none;
+  }
+
+  #contact-img {
+    display: none
+  }
+
+  #hello {
+    margin-bottom: 4%;
   }
 }
 
