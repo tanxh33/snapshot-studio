@@ -535,18 +535,19 @@ h1.custom-heading {
 }
 
 #hello h1 {
-  font-family: 'Poppins', sans-serif;
+  /* font-family: 'Poppins', sans-serif; */
+  font-weight: 600;
   font-size: 50px;
-  color: #2f3b5c;
+  color: var(--tertiary-color);
 }
 
 #hello > div:first-of-type {
-  font-family: 'Poppins', sans-serif;
+  /* font-family: 'Poppins', sans-serif; */
   font-size: calc(18px + (22 - 18) * ((100vw - 500px) / (1280 - 500)));
-  color: #2f3b5c;
+  color: var(--tertiary-color);
 }
 
-.formCard {
+#contact .formCard {
   grid-row: 4/7;
   grid-column: 2/4;
   z-index: 1;
@@ -554,31 +555,37 @@ h1.custom-heading {
   background-color: white;
 }
 
-.formCard > form {
+#contact .formCard > form {
   width: 90%;
   margin: auto;
 }
 
-.formCard > form label {
+#contact .formCard > form label {
   font-family: 'Poppins', sans-serif;
   font-size: calc(14px + (16 - 14) * ((100vw - 500px) / (1280 - 500)));
   color: #000000;
   margin-bottom: 1rem;
 }
 
-.formCard > form  input,
-.formCard > form  textarea {
+#contact .formCard > form input,
+#contact .formCard > form textarea {
   border-radius: 10px;
 }
 
-.formCard > form  button {
+#contact .formCard > form input:focus,
+#contact .formCard > form textarea:focus {
+  border-color: var(--secondary-color);
+  box-shadow: 0 0 0 0.2rem #fdb9ba66 !important;
+}
+
+#contact .formCard > form button {
   border-radius: 10px;
   width: 120px;
   color: #2f3b5c;
 }
 
-#asterisk {
-  color: var(--red)
+#contact .asterisk {
+  color: crimson;
 }
 
 #contact-img {
@@ -590,7 +597,6 @@ h1.custom-heading {
   display: grid;
   grid-template-columns: 100px 350px 32px auto 20px 100px;
   grid-template-rows: 100px 50px 16px 180px 200px 36px 100px;
-
 }
 
 #bg-color {
@@ -612,10 +618,9 @@ h1.custom-heading {
 }
 
 #address h1 {
-  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
   font-size: calc(32px + (40 - 32) * ((100vw - 500px) / (1280 - 500)));
 }
-
 
 #map {
   grid-row: 4 / 7;

@@ -53,6 +53,7 @@
   max-width:4%;
 }
 
+
 @media screen and (max-width: 768px) {
   #footer-c .grid-container {
     display: grid;
@@ -163,6 +164,7 @@
     grid-template-rows: 0.3fr 1fr;
     gap: 1rem;
   }
+
   #home-a1 > div > img {
     width: 70%;
   }
@@ -180,6 +182,7 @@
   #home-a2 > div > ul {
     margin: 0 1rem;
   }
+
   #home-b .home-b-col .photo-card {
     padding-bottom: 1rem;
   }
