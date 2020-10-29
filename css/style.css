@@ -1,3 +1,24 @@
+@font-face {
+  font-family:"Poppins";
+    src: url("../fonts/Poppins-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family:"Poppins";
+    src: url("../fonts/Poppins-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family:"Reenie Beanie";
+    src: url("../fonts/ReenieBeanie-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
 :root {
   --primary-color: #f9d99f;
   --secondary-color: #fdb9ba;
@@ -15,7 +36,7 @@
 }
 
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Poppins', Verdana, sans-serif;
   background-color: #ffffff;
 }
 
@@ -33,7 +54,7 @@ html {
 }
 
 .custom-heading {
-  font-family: 'Reenie Beanie', cursive;
+  font-family: 'Reenie Beanie', Verdana, cursive;
   /* Make text un-selectable */
   -webkit-user-select: none; /* Safari */        
   -moz-user-select: none; /* Firefox */
