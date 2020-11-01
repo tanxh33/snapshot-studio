@@ -147,6 +147,10 @@
     font-size: calc(14px + (16 - 14) * ((100vw - 500px) / (768 - 500)));
   }
 
+  #home-d #ig-photos {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
   #about-team .content {
     grid-template-columns: none;
     grid-template-rows: repeat(3, 1fr);
@@ -211,10 +215,17 @@
   #home-b .home-b-col .photo-card {
     padding-bottom: 1rem;
   }
+
   #home-carousel .carousel-item > div {
     display: block;
     padding: 0 3rem 1rem;
   }
+
+  #home-d #ig-photos {
+    margin: 0 3rem;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
   #about-team .memberCardText {
     /* width: 80%; */
     margin:auto;
