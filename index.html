@@ -4,7 +4,6 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Reenie+Beanie&display=swap" rel="stylesheet"> 
   <link rel="stylesheet" href="./css/bootstrap.min.css" />
   <link rel="stylesheet" href="./css/style.css" />
   <link rel="stylesheet" media="screen and (max-width: 992px)" href="./css/mobile.css">
@@ -75,10 +74,10 @@
         <img src="./img/home/B02.png" alt="" />
         <ul class="text-left">
           <li class="mb-3">
-            <h1>Some Baby Package Deal Name</h1>
+            <h1>Our Beautiful Journey Package</h1>
           </li>
           <li class="mb-3">
-            <p>Description of the package. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis porro cum maiores saepe voluptatum cupiditate est magni, molestias officia voluptas?</p>
+            <p>Your child will only be a new-born once. That is why you must go after an established name in newborn baby photography. With the right photographer, you will be able to memorialise your child’s most beautiful days.</p>
           </li>
           <li>
             <a class="btn btn-outline-dark rounded-pill px-4 py-lg-2" href="#">Learn more</a>
@@ -90,10 +89,10 @@
       <div>
         <ul class="text-left">
           <li class="mb-3">
-            <h1>Some Wedding Package Deal Name</h1>
+            <h1>Timeless Package</h1>
           </li>
           <li class="mb-3">
-            <p>Description of the package. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis porro cum maiores saepe voluptatum cupiditate est magni, molestias officia voluptas?</p>
+            <p>Your wedding day is one of the biggest milestones in your life. It is natural to want to replay the beautiful moments over and over again. Hire us as professional wedding photographers and we will capture these moments and make them last a lifetime.</p>
           </li>
           <li>
             <a class="btn btn-outline-dark rounded-pill px-4 py-lg-2" href="#">Learn more</a>
@@ -156,11 +155,93 @@
     </div>
   </section>
 
-  <div class="section-divider my-4 my-md-5"></div>
+  <div class="section-divider my-3 my-md-4"></div>
 
   <section id="home-c" class="container-fluid text-center">
     <h1 class="custom-heading">Our Clients' Reviews</h1>
-    <div></div>
+    <div id="home-carousel" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#home-carousel" data-slide-to="0" class="active"><div></div></li>
+        <li data-target="#home-carousel" data-slide-to="1"><div></div></li>
+        <li data-target="#home-carousel" data-slide-to="2"><div></div></li>
+      </ol>
+      <div class="carousel-inner pt-3 pb-5">
+        <div class="carousel-item active" data-interval="7000">
+          <div>
+            <img src="./img/home/E01.png" class="d-block w-100" alt="">
+            <div class="carousel-text">
+              <p>
+                We are glad to have engaged Snapshot as our wedding photographer. We love how the photos turned out, especially those casual shots.
+              </p>
+              <p>
+                We must say Snapshot has an eye for candid moments. They managed to capture so many casual yet meaningful shots that we do not remember happening! These wedding photos bring us fond memories of that special day.
+              </p>
+              <p>
+                Snapshot is also very easy to work with and open to communication. We will definitely recommend Snapshot to our friends!
+              </p>
+              <p class="quote-name">Justin & Winnie</p>
+              <p class="quote-name-sub">Newlywed couple</p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item" data-interval="7000">
+          <div>
+            <img src="./img/home/E02.png" class="d-block w-100" alt="">
+            <div class="carousel-text">
+              <p>
+                There are no words to describe how happy we are with our maternity pictures. We felt so comfortable with Snapshot. They were very patient and generous with their time. We will cherish our photos forever and we will definitely be back to their studio. On behalf of our family &mdash; thanks a million and until next time!
+              </p>
+              <p class="quote-name">Faith Chan</p>
+              <p class="quote-name-sub">First-time mom</p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item" data-interval="7000">
+          <div>
+            <img src="./img/home/E03.png" class="d-block w-100" alt="">
+            <div class="carousel-text">
+              <p style="font-weight: 600;">
+                Well worth the money for a lifetime of memories …
+              </p>
+              <p>
+                Snapshot took beautiful photos of our family and we loved how they interacted with the kids to make them feel comfortable. Highly recommend White Room Studio, and we will definitely be back for future photoshoots. Although slightly pricey, I believe it is well worth the money for a lifetime of memories.
+              </p>
+              <a href="https://facebook.com" target="_blank">
+                <p class="quote-name">Jasmine Teo</p>
+                <p class="quote-name-sub">4 April 2019, Facebook</p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#home-carousel" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#home-carousel" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+  </section>
+
+  <div class="section-divider mb-4 mb-md-5"></div>
+
+  <section id="home-d" class="container-fluid text-center mb-4">
+    <h1>We guarantee quality photos you'll cherish for years to come.</h1>
+    <a class="btn btn-primary rounded-pill px-4 py-lg-2 mb-4" href="./contact.html">Work with us now!</a>
+    <div id="ig-photos">
+      <a href="https://instagram.com"><img src="./img/home/F01.png" alt="" /></a>
+      <a href="https://instagram.com"><img src="./img/home/F02.png" alt="" /></a>
+      <a href="https://instagram.com"><img src="./img/home/F03.png" alt="" /></a>
+      <a href="https://instagram.com"><img src="./img/home/F04.png" alt="" /></a>
+      <a href="https://instagram.com"><img src="./img/home/F05.png" alt="" /></a>
+      <a href="https://instagram.com"><img src="./img/home/F06.png" alt="" /></a>
+    </div>
+    <div id="ig-follow">
+      <p>Follow us on Instagram!</p>
+      <a href="https://instagram.com">@snapshot_studio_sg</a>
+    </div>
   </section>
 
   <a id="scroll-btn" class="btn btn-outline-secondary" href="#">

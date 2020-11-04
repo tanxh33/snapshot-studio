@@ -3,6 +3,21 @@
   width: 135px;
 }
 
+#home-carousel .carousel-indicators {
+  bottom: 0;
+}
+
+#home-carousel .carousel-item > div {
+  padding: 0 6rem;
+  display: grid;
+  grid-template-columns: 0.5fr 0.1fr 1fr;
+  grid-template-rows: 1rem min-content 1rem;
+}
+
+#home-carousel .carousel-text {
+  padding: 2rem 3rem 2rem 5rem;
+}
+
 #about-a > div:first-of-type,
 #about-team .header,
 #about-action > div:first-of-type {
@@ -52,6 +67,7 @@
 #address img {
   max-width:4%;
 }
+
 
 @media screen and (max-width: 768px) {
   #footer-c .grid-container {
@@ -121,6 +137,20 @@
     transform: none;
   }
 
+  #home-carousel .carousel-item > div {
+    display: block;
+    padding: 0 4rem 1rem;
+  }
+
+  #home-carousel .carousel-text {
+    padding: 2rem;
+    font-size: calc(14px + (16 - 14) * ((100vw - 500px) / (768 - 500)));
+  }
+
+  #home-d #ig-photos {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
   #about-team .content {
     grid-template-columns: none;
     grid-template-rows: repeat(3, 1fr);
@@ -163,6 +193,7 @@
     grid-template-rows: 0.3fr 1fr;
     gap: 1rem;
   }
+
   #home-a1 > div > img {
     width: 70%;
   }
@@ -180,8 +211,19 @@
   #home-a2 > div > ul {
     margin: 0 1rem;
   }
+
   #home-b .home-b-col .photo-card {
     padding-bottom: 1rem;
+  }
+
+  #home-carousel .carousel-item > div {
+    display: block;
+    padding: 0 3rem 1rem;
+  }
+
+  #home-d #ig-photos {
+    margin: 0 3rem;
+    grid-template-columns: repeat(2, 1fr);
   }
 
   #about-team .memberCardText {
