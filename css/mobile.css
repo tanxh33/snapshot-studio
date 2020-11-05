@@ -3,6 +3,14 @@
   width: 135px;
 }
 
+#navbar-items .active {
+  background-color: #f4f4f4;
+}
+
+#navbar-items .active .nav-link {
+  border-bottom: none;
+}
+
 #home-carousel .carousel-indicators {
   bottom: 0;
 }
