@@ -238,3 +238,17 @@
     padding-right: 1.5rem;
   }
 }
+
+
+/* Landscape */
+@media screen and (max-height : 600px), (max-width: 576px) {
+  #portfolio .TOC a {
+    font-size: 12px;
+    padding: 0.5rem;
+  }
+
+  #pdpa .TOC a {
+    font-size: 10px;
+    padding: 0.25rem;
+  }
+}

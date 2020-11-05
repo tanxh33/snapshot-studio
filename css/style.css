@@ -788,6 +788,7 @@ h1.custom-heading {
   position:absolute;
 }
 
+
 /* ===================== */
 /* Portfolio Page */
 /* ===================== */
@@ -832,9 +833,11 @@ h1.custom-heading {
   margin-bottom: 5%;
 }
 
-/* Portfolio | Cover | toc 1 */
 
-#toc1 .cover {
+/* ===================== */
+/* Portfolio | Cover | toc 1 */
+/* ===================== */
+#portfolio-content #toc1 .cover {
   position: relative;
   width:95%;
   margin: auto;
@@ -880,10 +883,11 @@ h1.custom-heading {
 
 .imgDiv {
   max-width: 900px;
-  margin: auto;
-  margin-top: 1%;
-  margin-bottom: 1%;
+  margin: 1% auto 1%;
+  /* margin-top: 1%; */
+  /* margin-bottom: 1%; */
   display: flex;
+  /* justify-content: space-between; */
 }
 
 .imgDiv .column {
@@ -891,8 +895,21 @@ h1.custom-heading {
   margin-left: 5px;
 }
 
-.imgDiv #port-image {
+.imgDiv .column:first-of-type {
+  margin-left: 3%;
+}
+
+
+.imgDiv .column:last-of-type {
+  margin-right: 3%;
+}
+
+.imgDiv .port-image {
   margin-bottom: 5px;
+}
+
+.imgDiv .port-image img {
+  width: 100%;
 }
 
 .contactDiv {
