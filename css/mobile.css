@@ -190,6 +190,7 @@
   #hello {
     margin-bottom: 4%;
   }
+
 }
 
 
@@ -244,6 +245,10 @@
 
   #privacy-toc {
     padding-right: 1.5rem;
+  }
+
+  .services-a .grid-container {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
