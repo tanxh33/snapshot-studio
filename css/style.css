@@ -115,6 +115,7 @@ h1.custom-heading {
 #navbar {
   color: var(--tertiary-color) !important;
   font-weight: 600;
+  z-index: 7;
 }
 
 .navbar-brand {
@@ -516,12 +517,21 @@ h1.custom-heading {
 .banner-container {
   position: relative;
   padding: 0 !important;
+  height: 80vh;
+}
+
+#about-banner.banner-container {
+  background: url('../img/about/about_01.png')  no-repeat center center/cover;
+}
+
+.banner-content {
+  position: absolute;
+  line-height: 1.2;
+  font-size: calc(30px + (50 - 30) * ((100vw - 500px) / (1280 - 500)));
 }
 
 #about-banner .banner-content {
-  position: absolute;
-  font-size: calc(24px + (50 - 24) * ((100vw - 500px) / (1280 - 500)));
-  top: 18%;
+  top: 40%;
   right: 4%;
 }
 
@@ -946,10 +956,12 @@ h1.custom-heading {
 /* ===================== */
 /* Services - Wedding */
 /* ===================== */
+#wedding-banner.banner-container {
+  background: url('../services/img/wedding/wedding__01.png')  no-repeat center center/cover;
+}
+
 #wedding-banner .banner-content {
-  position: absolute;
-  font-size: calc(24px + (50 - 24) * ((100vw - 500px) / (1280 - 500)));
-  top: 50%;
+  top: 40%;
   right: 10%;
 }
 

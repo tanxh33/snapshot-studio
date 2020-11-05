@@ -26,6 +26,10 @@
   padding: 2rem 3rem 2rem 5rem;
 }
 
+.banner-container {
+  height: 70vh;
+}
+
 #about-a > div:first-of-type,
 #about-team .header,
 #about-action > div:first-of-type {
@@ -159,6 +163,15 @@
     grid-template-columns: repeat(3, 1fr);
   }
 
+  .banner-container {
+    height: 60vh;
+  }
+
+  #about-banner .banner-content {
+    top: 17%;
+    right: 10%;
+  }
+
   #about-team .content {
     grid-template-columns: none;
     grid-template-rows: repeat(3, 1fr);
@@ -235,6 +248,10 @@
     grid-template-columns: repeat(2, 1fr);
   }
 
+  .banner-container {
+    height: 40vh;
+  }
+
   #about-team .memberCardText {
     /* width: 80%; */
     margin:auto;
@@ -249,6 +266,9 @@
 
   .services-a .grid-container {
     grid-template-columns: repeat(2, 1fr);
+  }
+  #wedding-banner .banner-content {
+    right: 5%;
   }
 }
 
