@@ -104,6 +104,10 @@ h1.custom-heading {
   transition: all 0.15s ease-out;
 }
 
+#scroll-btn svg {
+  fill: #6c757d;
+}
+
 #scroll-btn:hover svg {
   fill: white;
 }
@@ -954,17 +958,8 @@ h1.custom-heading {
 
 
 /* ===================== */
-/* Services - Wedding */
+/* Services */
 /* ===================== */
-#wedding-banner.banner-container {
-  background: url('../services/img/wedding/wedding__01.png')  no-repeat center center/cover;
-}
-
-#wedding-banner .banner-content {
-  top: 40%;
-  right: 10%;
-}
-
 .services-a .grid-container {
   max-width: 1000px;
   margin: auto;
@@ -984,29 +979,156 @@ h1.custom-heading {
   grid-row: 1 / 3;
 }
 
-.services-b .grid-container {
-  display: grid;
-  grid-template-columns: 3rem 1fr 3rem;
-  grid-template-rows: 3rem 2fr 1fr 3rem;
+.services-b .services-container:first-of-type {
+  background: #323232;
+  padding: 2rem 2rem 0;
 }
 
-.services-b .grid-container .card-container {
-  grid-column: 1 / 4;
-  grid-row: 1 / 3;
+.services-b .services-container:last-of-type {
+  padding: 0 2rem 2rem;
+}
+
+.services-b .services-cards {
+  max-width: 1000px;
+  margin: auto;
+  padding: 2%;
   background: #323232;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr;
+  gap: 2%;
+  border: 3px solid #cfb53b;
+  border-bottom: none;
 }
 
-.services-b .grid-container .services-action {
-  grid-column: 1 / 4;
-  grid-row: 3 / 5;
+.services-b .title-card {
   background: #fff;
+  /* align-items: center; */
 }
 
-.services-b .grid-container .services-border {
-  grid-column: 2 / 3;
-  grid-row: 2 / 4;
-  height: 600px;
-  border: #cfb53b 3px solid;
+.services-b .title-card-upper {
+  text-align: center;
+  z-index: 1;
+  display: grid;
+  padding: 2rem 0;
+  grid-template-columns: 2rem 1fr 2rem;
+  grid-template-rows: 20% min-content min-content min-content 20%;
+  justify-content: center;
 }
+
+.services-b .title-card-upper img {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+  padding: 1rem 1rem 0;
+  width: 100%;
+  border: 3px solid #cfb53b;
+  border-bottom: none;
+}
+
+.services-b .title-card-upper h4 {
+  grid-column: 1 / 4;
+  grid-row: 3 / 4;
+  padding: 1rem 0.5rem;
+  margin: 0;
+  background-color: #ffffff;
+  color: #686666;
+  font-size: 22px;
+  font-weight: 600;
+  z-index: 2;
+}
+
+.services-b .title-card-upper h6 {
+  grid-column: 2 / 3;
+  grid-row: 4 / 5;
+  padding: 0 1rem 1rem;
+  margin: 0;
+  color: #686666;
+  font-size: 14px;
+  font-weight: 600;
+  border: 3px solid #cfb53b;
+  border-top: none;
+}
+
+.services-b .title-card-border {
+  grid-column: 2 / 5;
+  grid-row: 2 / 7;
+  border: 3px solid #cfb53b;
+}
+
+.services-b .title-card-bar {
+  margin-bottom: 2rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  align-items: center;
+  /* justify-content: center; */
+}
+
+.services-b .title-card-bar h4 {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+  color: #fff;
+  font-size: 24px;
+  font-weight: 600;
+  margin: 0;
+  margin-left: 15%;
+}
+
+.services-b .title-card-bar img {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+  width: 100%;
+}
+
+.services-b .services-card {
+  background: #ffffff;
+  /* display: flex; */
+  /* flex-direction: column; */
+  display: grid;
+  grid-template-rows: min-content min-content;
+}
+
+.services-b .services-card img {
+  width: 100%;
+  height: auto;
+}
+
+.services-b .services-card h6 {
+  color: #9e8407;
+  font-weight: 600;
+  padding: 1rem 2rem;
+  margin: 0;
+}
+
+.services-b .services-card p {
+  padding: 0 2rem 1rem;
+  font-size: 14px;
+  line-height: 1.3;
+}
+
+.services-b .services-action {
+  max-width: 1000px;
+  margin: auto;
+  padding: 4rem;
+  background: #fff;
+  border: 3px solid #cfb53b;
+  border-top: none;
+}
+
+
+/* ===================== */
+/* Services - Wedding */
+/* ===================== */
+#wedding-banner.banner-container {
+  background: url('../services/img/wedding/wedding__01.png')  no-repeat center center/cover;
+}
+
+#wedding-banner .banner-content {
+  top: 40%;
+  right: 10%;
+}
+
+
+/* ===================== */
+/* Services - Family */
+/* ===================== */

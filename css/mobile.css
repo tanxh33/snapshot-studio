@@ -80,6 +80,18 @@
   max-width:4%;
 }
 
+.services-b .services-cards {
+  max-width: 700px;
+  padding: 2rem;
+  gap: 2rem;
+  grid-template-columns: repeat(2, 1fr);
+  /* grid-template-rows: repeat(2, 1fr); */
+}
+
+.services-b .services-action {
+  max-width: 700px;
+  padding: 4rem 2rem;
+}
 
 @media screen and (max-width: 768px) {
   #footer-c .grid-container {
@@ -267,6 +279,24 @@
   .services-a .grid-container {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  .services-b .services-cards {
+    max-width: 320px;
+    padding: 2rem;
+    gap: 2rem;
+    grid-template-columns: none;
+    grid-template-rows: none;
+  }
+
+.services-b .title-card-upper h4 {
+  font-size: 20px;
+}
+
+.services-b .services-action {
+  max-width: 320px;
+  padding: 3rem 2rem;
+}
+
   #wedding-banner .banner-content {
     right: 5%;
   }
