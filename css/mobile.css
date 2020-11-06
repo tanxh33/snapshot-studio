@@ -93,6 +93,7 @@
   padding: 4rem 2rem;
 }
 
+
 @media screen and (max-width: 768px) {
   #footer-c .grid-container {
     display: grid;
@@ -216,6 +217,9 @@
     margin-bottom: 4%;
   }
 
+  #family-banner .banner-content {
+    top: 20%;
+  }
 }
 
 
@@ -299,6 +303,9 @@
 
   #wedding-banner .banner-content {
     right: 5%;
+  }
+  #family-banner .banner-content {
+    top: 12%;
   }
 }
 
