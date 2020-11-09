@@ -28,6 +28,10 @@
   --dark-color: #333333;
   --wedding-color: #cfb53b;
   --family-color: #3279d9;
+  --maternity-color: #b773cd;
+  --newborn-color: #dc657a;
+  --photobooth-color: #5e4837;
+  --individual-color: #50375e;
   --max-width: 1280px;
 }
 
@@ -973,7 +977,6 @@ h1.custom-heading {
 
 .services-a .grid-container img {
   width: 100%;
-  height: 100%;
 }
 
 .services-a .grid-container img:first-of-type {
@@ -1161,3 +1164,200 @@ h1.custom-heading {
   background-color: #a5e6d7;
   border-color: #96cec1;
 }
+
+
+/* ===================== */
+/* Services - Maternity */
+/* ===================== */
+#maternity-banner.banner-container {
+  background: url('../services/img/maternity/maternity__01.png')  no-repeat center center/cover;
+}
+
+#maternity-banner .banner-content {
+  top: 32%;
+  right: 10%;
+}
+
+#maternity-b .services-container:first-of-type {
+  background: #a2c8c6;
+}
+
+#maternity-b .services-cards,
+#maternity-b .title-card-upper img,
+#maternity-b .title-card-upper h6,
+#maternity-b .services-action {
+  border-color: var(--maternity-color);
+}
+
+#maternity-b .services-card h6 {
+  color: #9228b5;
+}
+
+#maternity-b .btn-primary {
+  background-color:#e7ceef;
+  border-color: #e7ceef;
+}
+
+/* ===================== */
+/* Services - Newborn */
+/* ===================== */
+#newborn-banner.banner-container {
+  background: url('../services/img/newborn/newborn__01.png')  no-repeat center center/cover;
+}
+
+#newborn-banner .banner-content {
+  top: 50%;
+  right: 25%;
+}
+
+#newborn-b .services-container:first-of-type {
+  background: #f7a887;
+}
+
+#newborn-b .services-cards,
+#newborn-b .title-card-upper img,
+#newborn-b .title-card-upper h6,
+#newborn-b .services-action {
+  border-color: var(--newborn-color);
+}
+
+#newborn-b .services-card h6 {
+  color: #c71e3c;
+}
+
+#newborn-b .btn-primary {
+  background-color:#ffc0cb;
+  border-color:#ffc0cb;
+}
+
+
+/* ===================== */
+/* Services - Photobooth */
+/* ===================== */
+#photobooth-banner.banner-container {
+  background: url('../services/img/photobooth/photobooth__01.png')  no-repeat center center/cover;
+}
+
+#photobooth-banner .banner-content {
+  top: 32%;
+  right: 15%;
+}
+
+#photobooth-b .services-container:first-of-type {
+  background: #f0ecc9;
+}
+
+#photobooth-b .services-cards,
+#photobooth-b .title-card-upper img,
+#photobooth-b .title-card-upper h6,
+#photobooth-b .services-action {
+  border-color: var(--photobooth-color);
+}
+
+#photobooth-b .title-card-bar h4 {
+  text-align: end;
+  margin-right: 4%;
+  font-size: 20px;
+}
+
+#photobooth-b .services-card h6 {
+  color: #5c3f28;
+}
+
+#photobooth-b .btn-primary {
+  background-color: #f0e1c9;
+  border-color: #f0e1c9;
+}
+
+/* ===================== */
+/* Services - Individual */
+/* ===================== */
+#individual-banner.banner-container {
+  background: url('../services/img/individual/individual__01.png')  no-repeat center center/cover;
+}
+
+#individual-banner .banner-content {
+  top: 32%;
+  left: 10%;
+}
+
+#individual  {
+  background: #222222;
+}
+
+#individual nav  {
+  background: #D2C7C7;
+}
+
+#individual-b .services-container:first-of-type {
+  background:#222222;
+}
+
+#individual-b .services-cards,
+#individual-b .title-card-upper img,
+#individual-b .title-card-upper h6,
+#individual-b .services-action {
+  border-color: var(--individual-color);
+}
+
+#individual-b .title-card-bar h4 {
+  text-align: end;
+  margin-right: 5%;
+}
+
+#individual-b .services-card h6 {
+  color:#f0ecc9;
+}
+
+
+#individual-b .services-action h1,
+#individual-b .services-action p,
+#individual-b .services-action a,
+#individual-b .services-action {
+  color: #ffffff;
+  background:#222222;
+}
+
+#individual-b .services-container .btn {
+  background: #004F52;
+  border-color: #004F52;
+}
+
+/* ===================== */
+/* Services - Outdoor */
+/* ===================== */
+#outdoor-banner.banner-container {
+  background: url('../services/img/photobooth/photobooth__01.png')  no-repeat center center/cover;
+}
+
+#outdoor-banner .banner-content {
+  top: 32%;
+  right: 15%;
+}
+
+#outdoor-b .services-container:first-of-type {
+  background: #f0ecc9;
+}
+
+#outdoor-b .services-cards,
+#outdoor-b .title-card-upper img,
+#outdoor-b .title-card-upper h6,
+#outdoor-b .services-action {
+  border-color: var(--outdoor-color);
+}
+
+#outdoor-b .title-card-bar h4 {
+  text-align: end;
+  margin-right: 4%;
+  font-size: 20px;
+}
+
+#outdoor-b .services-card h6 {
+  color: #5c3f28;
+}
+
+#outdoor-b .btn-primary {
+  background-color: #f0e1c9;
+  border-color: #f0e1c9;
+}
+
