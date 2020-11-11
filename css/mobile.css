@@ -220,6 +220,16 @@
   #family-banner .banner-content {
     top: 20%;
   }
+
+  #outdoor-banner .banner-content {
+    top: 20%;
+    /* Neat hack to keep this centered */
+    /* left: 50% is relative to the parent */
+    /* translate() is relative to the element's width and height */
+    left: 50%;
+    transform: translate(-50%, 0);
+    white-space: nowrap;
+  }
 }
 
 
@@ -284,6 +294,10 @@
     grid-template-columns: repeat(2, 1fr);
   }
 
+  .services-a .grid-container img:first-of-type {
+    height: auto;
+  }
+
   .services-b .services-cards {
     max-width: 320px;
     padding: 2rem;
@@ -306,6 +320,16 @@
   }
   #family-banner .banner-content {
     top: 12%;
+  }
+
+  #newborn-banner .banner-content {
+    right: 10%;
+  }
+  #photobooth-banner .banner-content {
+    right: 5%;
+  }
+  #individual-banner .banner-content {
+    left: 3%;
   }
 }
 
