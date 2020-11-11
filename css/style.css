@@ -32,6 +32,7 @@
   --newborn-color: #dc657a;
   --photobooth-color: #5e4837;
   --individual-color: #50375e;
+  --outdoor-color: #8eb404;
   --max-width: 1280px;
 }
 
@@ -531,7 +532,7 @@ h1.custom-heading {
 }
 
 #about-banner.banner-container {
-  background: url('../img/about/about_01.png')  no-repeat center center/cover;
+  background: url('../img/about/about-bg.png')  no-repeat center center/cover;
 }
 
 .banner-content {
@@ -864,7 +865,7 @@ h1.custom-heading {
   margin-top: 1%;
   margin-bottom: 1%;
    background-size: cover;
-  background-image: url('../img/portfolio/01-cover.png'); 
+  background-image: url('../img/portfolio/portfolio-background.png'); 
 
 }
 
@@ -980,6 +981,7 @@ h1.custom-heading {
 }
 
 .services-a .grid-container img:first-of-type {
+  height: 100%;
   grid-column: 1 / 3;
   grid-row: 1 / 3;
 }
@@ -1124,7 +1126,7 @@ h1.custom-heading {
 /* Services - Wedding */
 /* ===================== */
 #wedding-banner.banner-container {
-  background: url('../services/img/wedding/wedding__01.png')  no-repeat center center/cover;
+  background: url('../services/img/wedding/wedding-banner-bg.png')  no-repeat center center/cover;
 }
 
 #wedding-banner .banner-content {
@@ -1137,7 +1139,7 @@ h1.custom-heading {
 /* Services - Family */
 /* ===================== */
 #family-banner.banner-container {
-  background: url('../services/img/family/family__01.png')  no-repeat center center/cover;
+  background: url('../services/img/family/family-banner-bg.png')  no-repeat center center/cover;
 }
 
 #family-banner .banner-content {
@@ -1170,7 +1172,7 @@ h1.custom-heading {
 /* Services - Maternity */
 /* ===================== */
 #maternity-banner.banner-container {
-  background: url('../services/img/maternity/maternity__01.png')  no-repeat center center/cover;
+  background: url('../services/img/maternity/maternity-banner-bg.png')  no-repeat center center/cover;
 }
 
 #maternity-banner .banner-content {
@@ -1198,11 +1200,12 @@ h1.custom-heading {
   border-color: #e7ceef;
 }
 
+
 /* ===================== */
 /* Services - Newborn */
 /* ===================== */
 #newborn-banner.banner-container {
-  background: url('../services/img/newborn/newborn__01.png')  no-repeat center center/cover;
+  background: url('../services/img/newborn/newborn-banner-bg.png')  no-repeat center center/cover;
 }
 
 #newborn-banner .banner-content {
@@ -1230,12 +1233,22 @@ h1.custom-heading {
   border-color:#ffc0cb;
 }
 
+#newborn-b .btn-primary:hover,
+#newborn-b .btn-primary:focus {
+  background-color: var(--primary-color) !important;
+  border-color: var(--primary-color) !important;
+}
+
+#newborn-b .btn-primary:focus {
+  box-shadow: 0 0 0 0.2rem rgba(160, 98, 18, 0.5) !important;
+}
+
 
 /* ===================== */
 /* Services - Photobooth */
 /* ===================== */
 #photobooth-banner.banner-container {
-  background: url('../services/img/photobooth/photobooth__01.png')  no-repeat center center/cover;
+  background: url('../services/img/photobooth/photobooth-banner-bg.png')  no-repeat center center/cover;
 }
 
 #photobooth-banner .banner-content {
@@ -1269,11 +1282,12 @@ h1.custom-heading {
   border-color: #f0e1c9;
 }
 
+
 /* ===================== */
 /* Services - Individual */
 /* ===================== */
 #individual-banner.banner-container {
-  background: url('../services/img/individual/individual__01.png')  no-repeat center center/cover;
+  background: url('../services/img/individual/individual-banner-bg.png')  no-repeat center center/cover;
 }
 
 #individual-banner .banner-content {
@@ -1323,16 +1337,28 @@ h1.custom-heading {
   border-color: #004F52;
 }
 
+#individual-b .services-container .btn:hover,
+#individual-b .services-container .btn:focus {
+  background: var(--individual-color) !important;
+  border-color: var(--individual-color) !important;
+  color: #ffffff !important;
+}
+
+#individual-b .services-container .btn:focus {
+  box-shadow: 0 0 0 0.2rem rgba(190, 92, 247, 0.5) !important;
+}
+
+
 /* ===================== */
 /* Services - Outdoor */
 /* ===================== */
 #outdoor-banner.banner-container {
-  background: url('../services/img/outdoor/outdoor__01.png')  no-repeat center center/cover;
+  background: url('../services/img/outdoor/outdoor-banner-bg.png')  no-repeat center center/cover;
 }
 
 #outdoor-banner .banner-content {
   top: 40%;
-  left: 15%;
+  left: 10%;
 }
 
 #outdoor-b .services-container:first-of-type {
@@ -1346,8 +1372,6 @@ h1.custom-heading {
   border-color: var(--outdoor-color);
 }
 
-
-
 #outdoor-b .services-card h6 {
   color:#074b15;
 }
@@ -1356,4 +1380,3 @@ h1.custom-heading {
   background-color: #f8f99f;
   border-color: #f8f99f;
 }
-
