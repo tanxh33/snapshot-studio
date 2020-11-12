@@ -245,6 +245,10 @@ h1.custom-heading {
   border-bottom: 2px solid var(--medium-color);
 }
 
+#footer-bottom-text {
+  padding-bottom: 5rem;
+}
+
 #footer-bottom-text,
 #footer-bottom-text a {
   font-size: 12px;
