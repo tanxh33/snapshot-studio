@@ -17,4 +17,4 @@ NTU AY20/21 Semester 1 CS2024 web design project.
 </p>
 
 ### [!] Note [!]
-Image files will be removed from the repository after grading to avoid copyright issues.
+Image files have been removed from the repository after grading to avoid copyright issues.
